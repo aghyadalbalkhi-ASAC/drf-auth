@@ -13,5 +13,5 @@ class PermissionsClass(permissions.BasePermission):
         if request.method in permissions.SAFE_METHODS:
             return True
         # Write Permission for Device of Device
-        if request.user == obj.Device:
+        if request.user == obj.device_company:
             return True
